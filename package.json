@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "rok": "ngrok http 3000"
+    "dev-and-networked": "vite --host"
   },
   "dependencies": {
     "sass": "^1.32.12",

@@ -3,14 +3,11 @@ import NotFound from "@/views/NotFound.vue";
 
 const routes = [
   {
+    name: "main",
     path: "/",
-    redirect: { name: "" },
-  },
-  {
-    name: "",
-    path: "",
-    meta: { title: "" },
-    component: App,
+    meta: { title: "main page" },
+    component: NotFound,
+    //redirect: { name: "" },
   },
 
   {
@@ -23,10 +20,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-//
-router.beforeEach((to, from, next) => {
-  if (true) {
-  } else next();
-});
+
+//Pricipalement pour l'authentification
+
+// router.beforeEach((to, from, next) => {
+//   if (true) {
+//   } else next();
+// });
 
 export default router;
